@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprehensive Job Application Form</title>
+  </head>
+  <body>
+    <form action="/server">
+      <h2>Job Application Form</h2>
+
+      <!-- Personal Details -->
+      <fieldset>
+        <legend><strong>Personal Details</strong></legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br /><br />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+        <br /><br />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+        <br /><br />
+
+        <label for="linkedin">LinkedIn Profile:</label>
+        <input type="url" id="linkedin" name="linkedin" />
+        <br /><br />
+
+        <label for="resume">Upload Resume (PDF/DOC):</label>
+        <input
+          type="file"
+          id="resume"
+          name="resume"
+          accept=".pdf,.doc,.docx"
+          required
+        />
+        <br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br /><br />
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" />
+        <label for="other">Other</label>
+      </fieldset>
+      <br />
+
+      <!-- Job Preferences -->
+      <fieldset>
+        <legend><strong>Job Preferences</strong></legend>
+        <label for="role">Preferred Job Role:</label>
+        <input type="text" id="role" name="role" required />
+        <br /><br />
+
+        <label>Availability:</label>
+        <input
+          type="radio"
+          id="full-time"
+          name="availability"
+          value="Full-Time"
+          required
+        />
+        <label for="full-time">Full-Time</label>
+        <input
+          type="radio"
+          id="part-time"
+          name="availability"
+          value="Part-Time"
+        />
+        <label for="part-time">Part-Time</label>
+        <br /><br />
+
+        <label>Are you willing to relocate?</label>
+        <input type="radio" id="yes" name="relocation" value="Yes" required />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="relocation" value="No" />
+        <label for="no">No</label>
+        <br /><br />
+
+        <label for="salary">Expected Salary (₹):</label>
+        <input
+          type="number"
+          id="salary"
+          name="salary"
+          min="300000"
+          max="5000000"
+          step="50000"
+          required
+        />
+      </fieldset>
+      <br />
+
+      <!-- Education Details -->
+      <fieldset>
+        <legend><strong>Education Details</strong></legend>
+        <label for="tenth">10th Marks/Percentage:</label>
+        <input type="text" id="tenth" name="tenth" required />
+        <br /><br />
+
+        <label for="tenth-school">10th School/Institute:</label>
+        <input type="text" id="tenth-school" name="tenth-school" required />
+        <br /><br />
+
+        <label for="twelfth">12th Marks/Percentage:</label>
+        <input type="text" id="twelfth" name="twelfth" required />
+        <br /><br />
+
+        <label for="twelfth-school">12th School/Institute:</label>
+        <input type="text" id="twelfth-school" name="twelfth-school" required />
+        <br /><br />
+
+        <label for="degree">Highest Degree:</label>
+        <input type="text" id="degree" name="degree" required />
+        <br /><br />
+
+        <label for="university">University/Institute:</label>
+        <input type="text" id="university" name="university" required />
+        <br /><br />
+
+        <label for="university-location">University Location:</label>
+        <input
+          type="text"
+          id="university-location"
+          name="university-location"
+          required
+        />
+        <br /><br />
+
+        <label for="year">Year of Passing:</label>
+        <input
+          type="number"
+          id="year"
+          name="year"
+          min="1980"
+          max="2025"
+          required
+        />
+        <br /><br />
+
+        <label for="cgpa">CGPA/Percentage:</label>
+        <input type="text" id="cgpa" name="cgpa" required />
+      </fieldset>
+      <br />
+
+      <!-- Technical Skills -->
+      <fieldset>
+        <legend><strong>Technical Skills</strong></legend>
+
+        <strong>Frontend Technologies:</strong><br />
+        <input type="checkbox" id="html" name="skills" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="checkbox" id="css" name="skills" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input type="checkbox" id="js" name="skills" value="JavaScript" />
+        <label for="js">JavaScript</label><br />
+        <input type="checkbox" id="react" name="skills" value="ReactJS" />
+        <label for="react">ReactJS</label><br />
+        <input type="checkbox" id="angular" name="skills" value="Angular" />
+        <label for="angular">Angular</label><br /><br />
+
+        <strong>Backend Technologies:</strong><br />
+        <input type="checkbox" id="nodejs" name="skills" value="NodeJS" />
+        <label for="nodejs">NodeJS</label><br />
+        <input type="checkbox" id="django" name="skills" value="Django" />
+        <label for="django">Django</label><br />
+        <input type="checkbox" id="spring" name="skills" value="Spring Boot" />
+        <label for="spring">Spring Boot</label><br /><br />
+
+        <strong>Databases:</strong><br />
+        <input type="checkbox" id="mysql" name="skills" value="MySQL" />
+        <label for="mysql">MySQL</label><br />
+        <input type="checkbox" id="mongodb" name="skills" value="MongoDB" />
+        <label for="mongodb">MongoDB</label><br /><br />
+
+        <strong>DevOps & Cloud:</strong><br />
+        <input type="checkbox" id="aws" name="skills" value="AWS" />
+        <label for="aws">AWS</label><br />
+        <input type="checkbox" id="azure" name="skills" value="Azure" />
+        <label for="azure">Azure</label><br />
+        <input type="checkbox" id="docker" name="skills" value="Docker" />
+        <label for="docker">Docker</label><br />
+        <input
+          type="checkbox"
+          id="kubernetes"
+          name="skills"
+          value="Kubernetes"
+        />
+        <label for="kubernetes">Kubernetes</label><br /><br />
+
+        <strong>AI & ML:</strong><br />
+        <input
+          type="checkbox"
+          id="tensorflow"
+          name="skills"
+          value="TensorFlow"
+        />
+        <label for="tensorflow">TensorFlow</label><br />
+        <input type="checkbox" id="pytorch" name="skills" value="PyTorch" />
+        <label for="pytorch">PyTorch</label><br />
+        <input type="checkbox" id="opencv" name="skills" value="OpenCV" />
+        <label for="opencv">OpenCV</label><br />
+      </fieldset>
+      <br />
+      <!-- Hobbies -->
+      <fieldset>
+        <legend><strong>Hobbies</strong></legend>
+        <label for="hobbies">Please list your hobbies:</label>
+        <textarea id="hobbies" name="hobbies" rows="3"></textarea>
+      </fieldset>
+      <br />
+
+      <!-- Project Details -->
+      <fieldset>
+        <legend><strong>Project Details</strong></legend>
+        <label for="project-title">Project Title:</label>
+        <input type="text" id="project-title" name="project-title" required />
+        <br /><br />
+
+        <label for="project-description">Project Description:</label>
+        <textarea
+          id="project-description"
+          name="project-description"
+          rows="4"
+          required
+        ></textarea>
+        <br /><br />
+
+        <label for="project-tech">Technologies Used:</label>
+        <input type="text" id="project-tech" name="project-tech" required />
+        <br /><br />
+
+        <label for="project-link">Project Link (GitHub/Live Demo):</label>
+        <input type="url" id="project-link" name="project-link" />
+      </fieldset>
+      <br />
+
+      <!-- Personal Documents -->
+      <fieldset>
+        <legend><strong>Personal Documents</strong></legend>
+        <label for="aadhar">Upload Aadhar Card:</label>
+        <input type="file" id="aadhar" name="aadhar" accept=".pdf,.jpg,.png" />
+        <br /><br />
+
+        <label for="pan">Upload PAN Card:</label>
+        <input type="file" id="pan" name="pan" accept=".pdf,.jpg,.png" />
+        <br /><br />
+
+        <label for="passport">Upload Passport (if applicable):</label>
+        <input
+          type="file"
+          id="passport"
+          name="passport"
+          accept=".pdf,.jpg,.png"
+        />
+      </fieldset>
+      <br />
+
+      <!-- Employment Type -->
+      <fieldset>
+        <legend><strong>Employment Type Preference</strong></legend>
+        <input
+          type="radio"
+          id="onsite"
+          name="employment_type"
+          value="On-Site"
+          required
+        />
+        <label for="onsite">On-Site</label><br />
+
+        <input type="radio" id="hybrid" name="employment_type" value="Hybrid" />
+        <label for="hybrid">Hybrid</label><br />
+
+        <input type="radio" id="remote" name="employment_type" value="Remote" />
+        <label for="remote">Remote</label>
+      </fieldset>
+      <br />
+
+      <!-- Work Authorization -->
+      <fieldset>
+        <legend><strong>Work Authorization</strong></legend>
+        <label for="citizen">Are you an Indian Citizen?</label>
+        <input
+          type="radio"
+          id="yes-citizen"
+          name="citizen"
+          value="Yes"
+          required
+        />
+        <label for="yes-citizen">Yes</label>
+        <input type="radio" id="no-citizen" name="citizen" value="No" />
+        <label for="no-citizen">No</label>
+        <br /><br />
+
+        <label for="visa">Do you require a work visa?</label>
+        <input type="radio" id="yes-visa" name="visa" value="Yes" />
+        <label for="yes-visa">Yes</label>
+        <input type="radio" id="no-visa" name="visa" value="No" />
+        <label for="no-visa">No</label>
+      </fieldset>
+      <br />
+      <!-- Languages Spoken -->
+      <fieldset>
+        <legend><strong>Languages Spoken</strong></legend>
+        <input type="checkbox" id="ENGLISH" name="Languages" value="ENGLISH" />
+        <label for="ENGLISH">English</label>
+        <br />
+        <input type="checkbox" id="HINDI" name="Languages" value="HINDI" />
+        <label for="HINDI">Hindi</label>
+        <br />
+        <input type="checkbox" id="MARATHI" name="Languages" value="MARATHI" />
+        <label for="MARATHI">Marathi</label>
+        <br />
+        <input type="checkbox" id="OTHERS" name="Languages" value="OTHERS" />
+        <label for="OTHERS">Others</label>
+      </fieldset>
+      <br />
+
+      <!-- Additional Questions -->
+      <fieldset>
+        <legend><strong>Additional Questions</strong></legend>
+        <label for="why">Why should we hire you?</label>
+        <textarea id="why" name="why" rows="4" required></textarea>
+        <br /><br />
+
+        <label for="strengths">Your Strengths:</label>
+        <textarea id="strengths" name="strengths" rows="3"></textarea>
+        <br /><br />
+
+        <label for="weaknesses">Your Weaknesses:</label>
+        <textarea id="weaknesses" name="weaknesses" rows="3"></textarea>
+      </fieldset>
+      <br />
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!-- 
+Text Area Element:
+- The <textarea> element is used to create a text area in an HTML form.
+- The <textarea> element is often used in a form, to collect user inputs like comments or reviews.
+- The <textarea> element is used to create a multi-line text input.
+- The rows attribute specifies the visible number of lines in a text area.
+- The cols attribute specifies the visible number of columns in a text area.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Area Element</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <label for="feedback"
+          >Please provide your valueable feedback below:</label
+        >
+        <br />
+        <textarea
+          name="feedback"
+          id="feedback"
+          cols="30"
+          rows="10"
+          placeholder="Enter your feedback here..."
+        ></textarea>
+        <!-- Basically, If I dont add 'name' attribute to the textarea element, then the value of the textarea will not be sent to the server(URL)-->
+        <br />
+        <button>submit</button>
+      </div>
+    </form>
+  </body>
+</html>

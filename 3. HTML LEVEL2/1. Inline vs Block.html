@@ -1,0 +1,87 @@
+<!-- 
+Block Elements:
+- Takes up the full-width available(whole block).
+- Takes up the full height available(whole block).
+- Starts from a new line.
+
+Inline Elements:
+- Takes up only necessary width.
+- Takes up only necessary height.
+- Does not start from a new line.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block vs Inline Elements</title>
+  </head>
+  <body>
+    <h1>Block vs Inline Elements in HTML</h1>
+
+    <p>
+      This page demonstrates the difference between block-level and inline
+      elements using basic and moderate HTML tags.
+    </p>
+
+    <!-- Block-Level Elements (Basic) -->
+    <h2>Basic Block Elements</h2>
+    <div>This is a &lt;div&gt; element.</div>
+    <p>This is a &lt;p&gt; (paragraph) element.</p>
+    <ul>
+      <li>This is a &lt;ul&gt; (unordered list).</li>
+      <li>Each &lt;li&gt; (list item) is also a block element.</li>
+    </ul>
+    <hr />
+    <blockquote>This is a &lt;blockquote&gt; element.</blockquote>
+
+    <!-- Inline Elements (Basic) -->
+    <h2>Basic Inline Elements</h2>
+    <p>This is an <span>&lt;span&gt;</span> inside a paragraph.</p>
+    <p>Here is an <a href="#">anchor (&lt;a&gt; link)</a>.</p>
+    <p>
+      <strong>&lt;strong&gt;</strong> and <em>&lt;em&gt;</em> are also inline
+      elements.
+    </p>
+    <p>
+      Here is an image:
+      <img src="https://via.placeholder.com/50" alt="Placeholder" />
+    </p>
+
+    <!-- Block-Level Elements (Moderate) -->
+    <h2>Block Elements</h2>
+    <article>
+      <h3>This is an &lt;article&gt; element</h3>
+      <p>It is used for independent content sections.</p>
+    </article>
+    <section>
+      <h3>This is a &lt;section&gt; element</h3>
+      <p>Sections group related content together.</p>
+    </section>
+    <aside>
+      <h3>This is an &lt;aside&gt; element</h3>
+      <p>It is often used for side content like ads or links.</p>
+    </aside>
+    <figure>
+      <img src="https://via.placeholder.com/100" alt="Example Image" />
+      <figcaption>
+        This is a &lt;figure&gt; with a &lt;figcaption&gt;.
+      </figcaption>
+    </figure>
+
+    <!-- Inline Elements (Moderate) -->
+    <h2>Inline Elements</h2>
+    <p>This is a <mark>&lt;mark&gt;</mark> element (highlighted text).</p>
+    <p>This is a <code>&lt;code&gt;</code> element for inline code.</p>
+    <p>
+      Here’s an
+      <abbr title="Hypertext Markup Language">&lt;abbr&gt;</abbr> element.
+    </p>
+    <p>Here’s a <small>&lt;small&gt;</small> element for smaller text.</p>
+    <p>
+      Here’s a <sub>&lt;sub&gt;</sub> and <sup>&lt;sup&gt;</sup> element for
+      subscript and superscript.
+    </p>
+  </body>
+</html>

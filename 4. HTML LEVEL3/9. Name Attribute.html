@@ -1,0 +1,60 @@
+<!-- 
+Input Element
+Name Attribute:
+- Name of the form control. Submitted with the form as part of the name/value pair.
+- Name attribute is used to identify form data after it has been submitted to the server.
+- example scenario: 
+    - If you have a form with a text field for the user's name, you might give the text field a name attribute of "name".
+    - When the form is submitted, the data in the text field is sent to the server with the name "name" and the value that the user entered. 
+    - The server-side script can then use the name "name" to access the value that the user entered.
+- Example : 
+<input type="text" placeholder="enter name" id="username" name="username"/>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Attribute</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          placeholder="enter name"
+          id="username"
+          name="username"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="enter email" id="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <button>submit</button>
+      </div>
+    </form>
+    <hr />
+    <div>
+      <form action="https://www.youtube.com/results?">
+        <input
+          type="text"
+          placeholder="search in youtube"
+          name="search_query"
+        />
+        <button>Search</button>
+        <!-- Here in this example the action 
+         attribute is used to specify the URL that the form data will be sent to.
+         The form data is sent to the specified URL when the form is submitted.
+         that means here, the form data will be sent to the youtube search page with
+         the search_query as the name attribute value and the value that the user entered in the text field as the value.
+        -->
+      </form>
+    </div>
+  </body>
+</html>

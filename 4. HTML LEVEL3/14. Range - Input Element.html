@@ -1,0 +1,35 @@
+<!-- 
+Input Element:
+Range
+- The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control).
+- The range input type lets you ask the user for a value in a given range. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input element-range</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        Audio setting:
+        <br />
+        <label for="volume">Select your volume level: </label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          id="vol"
+          name="vol"
+          step="10"
+          value="50"
+        />
+        <!-- value=50 means by default the slider will be in the middle -->
+        <!-- step attribute specifies the number intervals for the input field -->
+        <button>submit</button>
+      </div>
+    </form>
+  </body>
+</html>

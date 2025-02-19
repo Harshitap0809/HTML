@@ -1,0 +1,53 @@
+<!-- 
+Colspan & Rowspan Attributes:
+- used to create cells which spans over multiple rows or columns.
+- Colspan: used to merge multiple columns into a single column.
+- Rowspan: used to merge multiple rows into a single row.
+- Both attributes are used with <td> and <th> tags.
+- basic syntax:
+    <td colspan="value"> or <th colspan="value">
+    <td rowspan="value"> or <th rowspan="value"> 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>colspan and rowspan</title>
+  </head>
+  <body>
+    <table border="1" style="width: 100%">
+      <caption>
+        Food Menu
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Item</th>
+          <th colspan="2">Price</th>
+        </tr>
+        <tr>
+          <th>INR</th>
+          <th>USD</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Frooti</td>
+          <td>10</td>
+          <td>0.14</td>
+        </tr>
+        <tr>
+          <td>samosa</td>
+          <td>12</td>
+          <td>0.18</td>
+        </tr>
+        <tr>
+          <td>chips</td>
+          <td>20</td>
+          <td>0.28</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

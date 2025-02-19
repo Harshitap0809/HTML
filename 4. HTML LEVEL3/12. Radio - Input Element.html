@@ -1,0 +1,44 @@
+<!-- 
+Input Element:
+Radio Button - <input type="radio"> is used to create a radio button in an HTML form.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Input Element</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <input type="radio" name="fruit" id="apple" value="apple" />
+        <label for="apple">apple</label>
+        <input type="radio" name="fruit" id="mango" value="mango" />
+        <label for="mango">mango</label>
+        <button>submit</button>
+      </div>
+      <!--
+       here, to group the radio buttons, we have used the same 'name' attribute for both the radio buttons.
+       so, only one radio button can be selected at a time.
+       while for checkboxes, name attribute is not necessary to group them.
+       if we want to group checkboxes, we can use the same 'name' attribute for them.
+       eg: <input type="checkbox" name="fruit" id="apple" />
+           <input type="checkbox" name="fruit" id="mango" />
+      also, we can use the 'id' attribute of the radio button to link it with the 'label' element.
+      also, we can use the 'value' attribute to set the value of the radio button. because inside URL, only the value of the selected radio button will be sent. 
+      Since it is displayed in name=value format hence, we need to set the value of the radio button.
+       -->
+      <!-- similarly we can do for checkbox also -->
+      <br />
+      <div>
+        Select subjects:
+        <input type="checkbox" name="subject" id="English" value="eng" />
+        <label for="apple">English</label>
+        <input type="checkbox" name="subject" id="Maths" value="Maths" />
+        <label for="mango">Maths</label>
+        <button>submit</button>
+      </div>
+    </form>
+  </body>
+</html>

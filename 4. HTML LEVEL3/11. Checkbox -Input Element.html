@@ -1,0 +1,24 @@
+<!-- 
+Input Element:
+Checkbox
+- <input type="checkbox"> is used to create a checkbox in an HTML form.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkbox Input Element</title>
+  </head>
+  <body>
+    <form action="/server">
+      <input type="checkbox" name="age" id="age" checked />
+      <label for="age">I am 18+</label>
+      <button>submit</button>
+      <!--
+       If I write 'checked="checked"' or simply 'checked' then 'on' is passed to the server(URL). 
+       If I write 'checked="false"' or simple do not write anything then 'off' is passed to the server(URL).
+       -->
+    </form>
+  </body>
+</html>
