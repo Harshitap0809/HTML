@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #ff5a5f;
+  color: white;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #ffe5e5;
+}
+
+ul li a:active {
+  color: yellow;
+}
+
+/* Hero Section */
+.hero {
+  background: url("../img/bg.png") center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 50%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Food Delivery Section */
+.food-delivery {
+  padding: 50px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.food-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.food-content h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.food-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.food-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.food-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-item:hover {
+  transform: scale(1.1);
+}
+
+.food-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Additional Information Section */
+.additional-info {
+  padding: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.additional-info h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info-item {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #ff5a5f;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
